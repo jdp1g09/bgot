@@ -1,0 +1,51 @@
+.token {
+    position: absolute;
+    transition: left 1.0s linear;
+    z-index: 5;
+}
+
+#wildling-track {
+    position: absolute;
+    z-index: 5;
+    left: 968px;
+    top: 262px;
+    transform: rotate(90deg)scale(0.48);
+}
+
+.wild-token {
+    width: 100px;
+    top: 58px;
+}
+
+
+
+.victory-track {
+    width: 438px;
+}
+
+.tracks {
+    position: absolute;
+    top: 708px;
+    left: 1px;
+    width:1427px;
+    z-index: 3;
+}
+
+.supply {
+    top: 779px;
+    width: 32px
+}
+
+#influence-tokens .token{
+    width: 45px;
+}
+
+#influence-tokens-throne .token {
+    top: 736px;
+}
+#influence-tokens-fiefdoms .token {
+    top: 807px;
+}
+#influence-tokens-court .token {
+    top: 877px;
+}

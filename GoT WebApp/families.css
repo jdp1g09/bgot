@@ -1,0 +1,61 @@
+.lannister {
+    fill: rgba(255,0,0,0.4) !important;
+}
+
+.lannister:hover{
+    fill: rgba(255,0,0,0.8) !important;
+}
+
+.greyjoy {
+    fill: rgba(0,0,0,0.4) !important;
+}
+
+.greyjoy:hover {
+    fill: rgba(0,0,0,0.8) !important;
+}
+
+.stark {
+    fill: rgba(197, 197, 197, 0.4) !important;
+}
+
+.stark:hover {
+    fill: rgba(197, 197, 197, 0.8) !important;
+}
+
+.baratheon {
+    /*fill: rgba(0, 71, 255, 0.4) !important;*/
+    fill: rgba(255, 252, 49,0.4) !important;
+}
+
+.baratheon:hover{
+    /*fill: rgba(0, 71, 255, 0.6) !important;*/
+    fill: rgba(255, 252, 49,0.8) !important;
+}
+
+.martell {
+    fill: rgba(255, 165, 0, 0.4) !important;
+}
+
+.martell:hover {
+    fill: rgba(255, 165, 0, 0.8) !important;
+}
+
+.tyrell {
+    fill: rgba(0, 121, 2, 0.4) !important;   
+}
+
+.tyrell:hover {
+    fill: rgba(0, 121, 2, 0.8) !important;   
+}
+
+.area {
+    fill: rgba(0,0,0,0);
+    stroke: rgba(0, 0, 0, 0.5);
+    stroke-width: 2px;
+    -webkit-transition: fill 0.8s; /* For Safari 3.1 to 6.0 */
+    transition: fill 0.8s;
+}
+
+.area:hover{
+    fill: rgba(0,0,0,0.2);
+}

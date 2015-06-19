@@ -1,0 +1,73 @@
+<html ng-app="App">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="options.css">
+    <link rel="stylesheet" href="tooltip.css">
+    <link rel="stylesheet" href="families.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="tracks-and-tokens.css">
+</head>
+
+<body ng-controller="AppCtrl">
+    <div map ng-init="init()" style="position: absolute;z-index: 2;">
+    </div>
+    <img src="westeros.jpg" style="position: absolute;height:1502px;width:1002px;top: 1px;
+opacity: 0.8;transform: scale(0.95)rotate(90deg)translate(-290px,-225px);">
+    <div id="wildling-track">
+        <img src="wildlings-track-edited.png">
+        <img class="token wild-token" src="wildling-token.png">
+    </div>
+    <div id="wildling-cards" class="card_container" ng-class="{card_container_show: showWildlingCard}">
+        <div style="position: absolute;box-shadow: 5px 5px 25px black;">
+            <img src="wildlings-card-back.png">
+        </div>
+        <div class="card shadow">
+            <div ng-click="turnWildlingCard()" class="front face">
+                <img src="wildlings-card-back.png" />
+            </div>
+            <div ng-click="turnWildlingCard()" class="back face center">
+                <p>This is nice for exposing more information about an image.</p>
+                <p>Any content can go here.</p>
+            </div>
+        </div>
+    </div>
+    <img class="tracks" src="tracks.png">
+    <div id="round-track">
+        <img class="token round-token" src="timer.png">
+    </div>
+    <div id="victory-track">
+        <img ng-repeat = "house in houseArray" class="token"
+             id="victory-token-{{house}}" src="tokens/victory_{{house}}.png">
+    </div>
+    <div id="supply-track">
+        <img ng-repeat="house in houseArray" class="token supply" id="supply-token-{{house}}" src="tokens/supply_{{house}}.png">
+    </div>
+    <div id="influence-tokens">
+        <div id="influence-tokens-throne">
+            <img ng-repeat="house in houseArray" class="token" id="influence-token-throne-{{house}}" src="tokens/influence_{{house}}.png">
+        </div>
+        <div id="influence-tokens-fiefdoms">
+            <img ng-repeat="house in houseArray" class="token" id="influence-token-fiefdoms-{{house}}" src="tokens/influence_{{house}}.png">
+        </div>
+        <div id="influence-tokens-court">
+            <img ng-repeat="house in houseArray" class="token" id="influence-token-court-{{house}}" src="tokens/influence_{{house}}.png">
+        </div>
+    </div>
+    <div class="options">
+    </div>
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.js">
+    </script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="app.js"></script>
+    <script src="map/map.js"></script>
+
+</body>
+
+</html>
